@@ -14,29 +14,30 @@
         </header>
 
         <div class="forms">
-            <div class="title">
+            <button class="title">
                 <i class="ph ph-arrow-left"></i>
                 <p>Voltar</p>
-            </div>
-            
+            </button>
+
             <h1>Compras da semana</h1>
 
             <div class="add">
-                <input type="text" id="add-item-input" placeholder="Adicionar um novo item">
-                <button class="add-item-button">Adicionar item</button>
+                <input type="text" id="add-item-input" placeholder="Adicionar um novo item" required>
+                <button class="add-item-button" onclick="submit()">Adicionar item</button>
             </div>
 
             <div class="add-check">
                 <div id="check">
                     <div class="check-container">
                         <input type="checkbox" id="input-check">
-                        <h2 id="itens"></h2>
+                        <h2 id="itens"> </h2>
                     </div>
 
                     <button id="crash">
                         <i class="ph ph-trash"></i>
                     </button>
                 </div>
+
             </div>
         </div>
 
