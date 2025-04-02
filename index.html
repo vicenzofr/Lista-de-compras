@@ -3,11 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Lista de compras</title>
 </head>
     <body>
-        
+        <header>
+            <img src="img/logo.png" alt="">
+        </header>
+
+        <div class="forms">
+            <div class="title">
+                <i class="ph ph-arrow-left"></i>
+                <p>Voltar</p>
+            </div>
+            
+            <h1>Compras da semana</h1>
+
+            <div class="add">
+                <input type="text" id="add-item-input" placeholder="Adicionar um novo item">
+                <button class="add-item-button">Adicionar item</button>
+            </div>
+
+            <div class="add-check">
+                <div id="check">
+                    <div class="check-container">
+                        <input type="checkbox" id="input-check">
+                        <h2 id="itens"></h2>
+                    </div>
+
+                    <button id="crash">
+                        <i class="ph ph-trash"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
 
         <script src="index.js"></script>
     </body>
